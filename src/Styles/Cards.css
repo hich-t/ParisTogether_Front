@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica.ttc"), url("../fonts/Helvetica.ttc") format("truetype");
+}
+@font-face {
+  font-family: "Adobe Bold";
+  src: local("AdobeCleanBold.otf"),
+    url("../fonts/AdobeCleanBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Adobe Regular";
+  src: local("AdobeCleanRegular.otf"),
+    url("../fonts/AdobeCleanRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Adobe Italic";
+  src: local("AdobeCleanIt.otf"),
+    url("../fonts/AdobeCleanIt.otf") format("opentype");
+}
+
+.container {
+  display: flex;
+  min-width: 300px;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  height: 600px;
+  cursor: pointer;
+  align-content: center;
+}
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+  min-height: 200px;
+  align-content: center;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0px 2px 0px 2px;
+  color: #fff;
+  padding: 3px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.card-body p {
+  font-size: 12px;
+  overflow-y: scroll;
+}
+.user {
+  bottom: 0;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.ico-coeur {
+  width: 50px;
+  height: 50px;
+  margin: -203px 0px 0px 250px;
+  position: absolute;
+  top: 201px;
+  right: 2%;
+}
+
+.ico-coeur:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.titleCard {
+  margin-top: 10px;
+  font-family: "Adobe Bold";
+}
+
+.textCard {
+  max-height: 90px;
+  font-family: "Adobe Regular";
+  overflow-y: scroll;
+  font-size: smaller;
+  text-align: justify;
+}
+
+.location {
+  display: flex;
+}
+.adress {
+  margin-top: 9px;
+  font-family: "Helvetica";
+  font-size: small;
+}
+
+.timeDate {
+  display: flex;
+  margin-top: 9px;
+}
+
+.calendar {
+  font-family: "Helvetica";
+  font-size: small;
+}
+.date {
+  margin-top: 9px;
+  font-family: "Helvetica";
+  font-size: small;
+}
+.line {
+  border-top: 1px solid rgb(176, 169, 169);
+  width: 250px;
+}
+
+.tagContainer {
+  min-height: 50px;
+}
+
+.bodyContainer {
+  height: 180px;
+}
+
+.pmr {
+  width: 50px;
+  height: 50px;
+  margin: -52px 0px 0px 250px;
+  position: absolute;
+}
+
+.taged {
+  height: 82px;
+}
+
+.cardImgAtribute {
+  position: relative;
+}
+
+.map-popup {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(10%, 10%);
+  width: 200px;
+  background-color: #30ba9d;
+  padding: 1em;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 4;
+}
